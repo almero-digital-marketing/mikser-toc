@@ -1,6 +1,6 @@
 {
   "name": "mikser-toc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Collect the contents of the documents in one file",
   "main": "index.js",
   "dependencies": {

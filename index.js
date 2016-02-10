@@ -6,7 +6,7 @@ let Promise = require('bluebird');
 module.exports = function (mikser, context) {
 	let tocInfo = {
 		collection: context.data[context.layout.meta.toc] || context.data['toc'],
-		destinationFolder: path.join(mikser.options.runtimeFolder, 'toc'),
+		destinationFolder: path.join(mikser.config.runtimeFolder, 'toc'),
 		getDestination: function() {
 			let ext = path.extname(context.document.destination)
 			return context.document.destination.replace(mikser.config.outputFolder, this.destinationFolder).replace(ext, '.txt');
